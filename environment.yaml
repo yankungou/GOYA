@@ -1,0 +1,60 @@
+name: GOYA
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8.12=h12debd9_0
+  - cudatoolkit=11.3.1=h2bc3f7f_2
+  - pillow=9.2.0=py38hace64e9_1
+  - numpy=1.20.3
+  - pytorch=1.12.0=py3.8_cuda11.3_cudnn8.3.2_0
+  - torchvision==0.13.0
+  - torchaudio=0.12.0=py38_cu113
+  - pip:
+    - accelerate==0.18.0
+    - albumentations==0.4.3
+    - diffusers==0.16.1
+    - ftfy==6.1.1
+    - gdown==4.7.1
+    - imageio==2.21.2
+    - ipykernel==6.22.0
+    - ipywidgets==8.0.6
+    - jupyter==1.0.0
+    - jupyter-client==7.4.9
+    - jupyter-console==6.6.3
+    - jupyter-core==5.3.0
+    - jupyter-events==0.6.3
+    - jupyter-server==2.5.0
+    - jupyter-server-terminals==0.4.4
+    - jupyterlab-pygments==0.2.2
+    - jupyterlab-widgets==3.0.7
+    - kornia==0.6.8
+    - neptune-client==0.14.3
+    - notebook==6.5.4
+    - notebook-shim==0.2.3
+    - opencv-python==4.5.4.58
+    - pandas==1.4.1
+    - plotly==5.13.0
+    - pip==21.3.1
+    - pytorch-metric-learning==1.6.2
+    - regex==2022.8.17
+    - scikit-image==0.19.3
+    - scikit-learn==1.1.2
+    - scipy==1.7.1
+    - seaborn==0.11.2
+    - shutils==0.1.0
+    - sklearn==0.0
+    - torch==1.12.0
+    - torch-tb-profiler==0.3.1
+    - torchsummary==1.5.1
+    - tornado==6.3.1
+    - torchmetrics==0.9.3
+    - transformers==4.27.4
+    - tqdm==4.62.3
+    - pudb==2019.2
+    - omegaconf==2.1.1
+    - test-tube>=0.7.5
+    - streamlit>=0.73.1
+    - einops==0.3.0
+    - -e git+https://github.com/openai/CLIP.git@main#egg=clip
+    - -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
