@@ -10,7 +10,7 @@ import os
 parser = argparse.ArgumentParser(description='Disentanglement and classification evaluation with different embedding sizes when only one single layer is set in the content and style encoder.')
 
 parser.add_argument('--ori', action='store_true', help='plot with results in the paper')
-parser.add_argument('--save_dir', default='../../../evaluation/figure', type=str, help='directory to save the figures')
+parser.add_argument('--save_dir', default='evaluation/figure', type=str, help='directory to save the figures')
 
 
 def read_results(path):
@@ -114,12 +114,12 @@ if __name__ == '__main__':
         dc_list = [0.750, 0.808, 0.815, 0.814]
         save_path = os.path.join(args.save_dir, 'fig6_ori_results.pdf')
     else:
-        clf_results_path = '../../../evaluation/results/clf_results.txt'
+        clf_results_path = 'evaluation/results/clf_results.txt'
         df_clf = read_results(clf_results_path)
         genre_acc_list = df_clf['content'].tolist()
         style_acc_list = df_clf['style'].tolist()
 
-        dc_results_path = '../../../evaluation/results/dc_results.txt'
+        dc_results_path = 'evaluation/results/dc_results.txt'
         df_dc = read_results(dc_results_path)
         dc_list = df_dc['DC'].tolist()
         
